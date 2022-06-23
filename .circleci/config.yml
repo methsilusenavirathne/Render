@@ -7,9 +7,6 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-        - run:
-            name: Library
-            command: sudo apt-get install java-common default-jre-headless ffmpeg
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
